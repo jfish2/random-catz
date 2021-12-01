@@ -52,22 +52,28 @@
   align-items: center;
 }
 
-.cat_main{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.cat_img{
+  max-height: 50%;
+  max-width: 50%;
+  margin:1rem;
 }
 
-.cat_img{
-  max-height: 30%;
-  max-width: 30%;
-  margin:1rem;
+.dog_img {
+  max-height: 50%;
+  max-width: 50%;
+  margin: 1rem;
 }
 
 .cat_btn{
   padding: 1rem;
   margin: 1rem;
 }
+
+.dog_btn{
+  padding: 1rem;
+  margin: 1rem;
+}
+
+
+
+

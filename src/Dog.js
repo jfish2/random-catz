@@ -1,10 +1,10 @@
 import React, {useState} from "react";
 import './App.css'
 
-function Cat() {
+function Dog() {
     const [url, setUrl] = useState('')
     function fetch_data(){
-        fetch('https://api.thecatapi.com/v1/images/search').then(res => {
+        fetch('https://api.thedogapi.com/v1/images/search').then(res => {
             if (res.ok) {
                 return res.json();
             }
@@ -16,11 +16,11 @@ function Cat() {
     return (
         <div className="row">
             <div className="column">
-            <img src={url} alt="Here's a cute cat to cure your blues :)" className='cat_img' />
-            <button className='cat_btn' onClick={fetch_data}>Enjoy another cat image!</button>
+                <img src={url} alt="Here's a cute dog to cure your blues :)" className='dog_img' />
+                <button className='dog_btn' onClick={fetch_data}>Enjoy another dog image!</button>
             </div>
         </div>
     )
 }
 
-export default Cat
+export default Dog
